@@ -1,8 +1,10 @@
-function MyPokemon({ pokemons }) {
+import PokemonCard from "../components/PokemonCard/PokemonCard";
+
+function MyPokemonSSG({ pokemons }) {
   return (
     <ul>
       {pokemons.map((pokemon) => (
-        <li>Name: {pokemon.name}</li>
+        <PokemonCard key={pokemon.id} name={pokemon.name} />
       ))}
     </ul>
   );
@@ -19,4 +21,4 @@ export async function getStaticProps() {
   };
 }
 
-export default MyPokemon;
+export default MyPokemonSSG;
