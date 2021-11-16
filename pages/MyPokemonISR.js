@@ -2,7 +2,7 @@ import PokemonCard from "../components/PokemonCard/PokemonCard";
 
 function MyPokemonISR({ pokemons }) {
   return (
-    <ul>
+    <ul className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       {pokemons.map((pokemon) => (
         <PokemonCard key={pokemon.id} name={pokemon.name} />
       ))}
