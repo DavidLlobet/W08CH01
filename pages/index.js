@@ -22,6 +22,9 @@ export default function Home() {
         <Link className="nav-link" href="/MyPokemonSSG">
           MY POKEMON SSG
         </Link>
+        <Link className="nav-link" href="/MyPokemonISR">
+          MY POKEMON ISR
+        </Link>
       </header>
 
       <main className={styles.main}>
