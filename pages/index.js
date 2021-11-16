@@ -13,6 +13,9 @@ export default function Home() {
       </Head>
       <header className="d-flex justify-content-center py-3">
         {/* <Link className="nav-link">POKEMON</Link> */}
+        <Link className="nav-link" href="/Pokemon">
+          POKEMON
+        </Link>
         <Link className="nav-link" href="/MyPokemonSSR">
           MY POKEMON SSR
         </Link>
