@@ -1,5 +1,6 @@
 import PokemonCard from "../components/PokemonCard/PokemonCard";
 import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyPokemonSSR({ pokemons }) {
   return (
