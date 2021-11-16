@@ -1,4 +1,5 @@
 import PokemonCard from "../components/PokemonCard/PokemonCard";
+import Link from "next/link";
 
 import { useEffect, useState } from "react";
 
@@ -15,11 +16,28 @@ const Pokemon = () => {
   }, []);
 
   return (
-    <ul className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      {pokemons.map((pokemon) => (
-        <PokemonCard key={pokemon.name} name={pokemon.name} />
-      ))}
-    </ul>
+    <>
+      <header className="d-flex justify-content-center py-3">
+        {/* <Link className="nav-link">POKEMON</Link> */}
+        <Link className="nav-link" href="/Pokemon">
+          POKEMON/
+        </Link>
+        <Link className="nav-link" href="/MyPokemonSSR">
+          MY POKEMON SSR/
+        </Link>
+        <Link className="nav-link" href="/MyPokemonSSG">
+          MY POKEMON SSG/
+        </Link>
+        <Link className="nav-link" href="/MyPokemonISR">
+          MY POKEMON ISR
+        </Link>
+      </header>
+      <ul className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {pokemons.map((pokemon) => (
+          <PokemonCard key={pokemon.name} name={pokemon.name} />
+        ))}
+      </ul>
+    </>
   );
 };
 export default Pokemon;
