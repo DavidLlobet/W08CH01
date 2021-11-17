@@ -19,7 +19,9 @@ const Pokemon = () => {
   return (
     <>
       <header className="d-flex justify-content-center py-3">
-        {/* <Link className="nav-link">POKEMON</Link> */}
+        <Link className="nav-link" href="/">
+          <a>HOME PAGE/</a>
+        </Link>
         <Link className="nav-link" href="/Pokemon">
           POKEMON/
         </Link>
